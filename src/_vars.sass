@@ -1,0 +1,34 @@
+$color-a : #00acdf
+$color-hover : #00acdf
+$color-article: #000
+$color-article-h : #00acdf
+$color-mobile-links: white
+$color-main-background: #002a32
+
+$tr-a : 0.3s linear
+
+%top_nav
+	li
+		text-transform: uppercase
+		a
+			color: $color-mobile-links
+			text-decoration: none
+			transition: $tr-a
+			&:hover
+				color: $color-hover
+				
+%top_search
+	a
+		color: $color-a
+		text-decoration: none
+		transition: $tr-a
+		&:hover
+			color: $color-hover
+			
+%footer_hover
+	a
+		color: $color-a
+		text-decoration: none
+		transition: $tr-a
+		&:hover
+			color: #eee

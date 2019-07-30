@@ -1,0 +1,145 @@
+.primary_sidebar
+	width: 30%
+	
+.widget
+	padding: 37px 30px
+	margin-bottom: 35px
+	background-color: #fff
+	border: 1px solid #eeeeee
+	
+.widget-title
+	font-weight: 600
+	text-transform: uppercase
+	text-align: center
+	font-size: 18px
+	margin: 0 0 25px
+	letter-spacing: 0.5px
+	color: #333
+	
+.news-letter
+	input
+		line-height: 26px
+		width: 100%
+		margin-bottom: 14px
+		border: 1px solid #eeeeee
+		padding: 5px 0
+		font-style: italic
+		border-radius: 0
+		background-color: #fafafa
+	
+	.btn-subscribe
+		text-transform: uppercase
+		cursor: pointer
+		border: none
+		width: 100%
+		background-color: $color-main-background
+		color: #ffffff
+		font-weight: 600
+		border-radius: 0
+		letter-spacing: 1px
+		font-size: 12px
+		padding: 9px 0
+		transition: 0.3s
+		
+		&:hover
+			background-color: #00BFF3
+			color: #fff
+			
+.widget-author
+	.widget-author-img
+		img
+			width: 100%
+	.widget-author-name
+		margin: 15px 0
+		h3
+			font-size: 22px
+			text-align: center
+	.widget-author-desc
+		p
+			text-align: center
+			margin: 0 0 10px
+			color: #615f5f
+	
+
+.widget-soc
+	&-links
+		ul
+			display: flex
+			flex-direction: row
+			justify-content: center
+			li
+				margin-right: 20px
+				@extend %top_search
+				a
+					font-size: 24px
+
+.widget-search
+	&-form
+		form
+			position: relative
+			
+			input[type="search"]
+				line-height: 26px
+				width: 100%
+				margin-bottom: 14px
+				border: 1px solid #eeeeee
+				padding: 5px 0
+				font-style: italic
+				border-radius: 0
+				background-color: #fafafa
+			
+			.search-submit
+				position: absolute
+				top: 0
+				right: 0
+				line-height: 24px
+				cursor: pointer
+				padding: 0.5em 1em
+				background-color: $color-main-background
+				border: none
+				transition: $tr-a
+				i
+					color: #ffffff
+				
+				&:hover
+					background-color: $color-article-h
+				
+			
+.widget-tags
+	&-lists
+		text-align: center
+		@extend %top_search
+		a
+			display: inline-block
+			letter-spacing: 3px
+			padding: 5px 10px
+			background-color: rgba(4, 28, 35, 0.08)
+			margin-bottom: 10px
+			text-align: center
+			&:before
+				font-family: "Font Awesome 5 Free"
+				content: "\f02e"
+				padding-right: 5px
+				font-size: 16px
+
+.widget-comments
+	&-users-list
+		padding: 12px 0
+		border-bottom: 1px solid #eee
+	.comment-img
+		display: inline-block
+		float: left
+		margin-right: 10px
+		img
+			width: 50px
+			height: 50px
+			border-radius: 50%
+	
+	.comment-content
+		h4
+			font-size: 18px
+			color: $color-article-h
+		p
+			margin-top: 10px
+			color: #615f5f
+			line-height: 25px

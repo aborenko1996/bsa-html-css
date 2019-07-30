@@ -1,0 +1,116 @@
+main
+	width: 65%
+	display: flex
+	flex-direction: row
+	flex-wrap: wrap
+	justify-content: space-between
+	
+	.post
+		width: 45%
+		cursor: pointer
+		background-color: #fff
+		margin-bottom: 50px
+		
+		.post-thumb
+			position: relative
+			overflow: hidden
+			max-height: 250px
+			
+			img
+				width: 100%
+				transition: $tr-a
+				display: block
+			
+			.post-thumb-overlay
+				position: absolute
+				top: 0
+				left: 0
+				bottom: 0
+				height: 100%
+				width: 100%
+				opacity: 0
+				background: rgba(0,0,0,0.4)
+				overflow: hidden
+				transition: 0.5s
+				
+				div
+					text-align: center
+					color: #ffffff
+					display: block
+					height: 40px
+					width: 132px
+					border: 1px solid #ffffff
+					line-height: 40px
+					text-decoration: none
+					font-weight: 600
+					font-size: 14px
+					position: relative
+					top: 50%
+					letter-spacing: 1px
+					margin: 0 auto
+					margin-top: -18px
+					text-transform: uppercase
+			
+		&:hover
+				img
+					transform: scale(1.3)
+				.post-thumb-overlay
+					opacity: 1
+		
+		.post-content
+			padding: 0 30px
+			
+			.post-content-title
+				margin: 31px 0 20px
+				text-align: center
+				text-transform: uppercase
+				
+				p
+					margin: 10px 0
+					a
+						color: $color-article-h
+						font-size: 12px
+						text-decoration: none
+				
+				.post-date
+					font-style: italic
+					font-size: 11px
+				
+				
+				.post-name
+					line-height: 24px
+					margin-bottom: 5px
+					min-height: 50px
+					
+					a
+						text-decoration: none
+						font-size: 18px
+						color: $color-article
+						transition: $tr-a
+						&:hover
+							color: $color-article-h
+			
+			.post-content-intro
+				line-height: 24px
+				p
+					margin: 0 0 10px
+					color: #615f5f
+					min-height: 240px
+				
+				.post-statistic
+					margin-bottom: 20px
+					
+					.post-statistic-rating
+						span
+							font-style: italic
+							font-size: 12px
+							float: right
+							i
+								color: $color-article-h
+				
+				.post-statistic-comments
+					font-style: italic
+					font-size: 12px
+					a
+						color: $color-a
+						text-decoration: none
